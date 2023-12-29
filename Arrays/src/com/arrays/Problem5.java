@@ -9,20 +9,18 @@ public class Problem5 {
 		int n2;
 		for(int i=0; i<arr.length; i++) {
 			n1 = arr[i];
-			System.out.println(n1);
 			
 			for(int j=0; j<arr.length; j++) {
 				n2 = arr[j];
-				System.out.println(n2);
+				if(n1+n2==key) {
+					System.out.println("The index value of pair of numbers of entered number is "+i+" and "+j);
+				}
 			}
 		}
-//		if(key=n1+n2) {
-//			System.out.println(i);
-//		}
 	}
 
 	public static void main(String[] args) {
-		int[] arr = {1,9,7,8,10,11};
+		int[] arr = {1,9,7,8,10,11,18,15};
 		System.out.println("Enter Number");
 		Scanner sc = new Scanner(System.in);
 		int key = sc.nextInt();
