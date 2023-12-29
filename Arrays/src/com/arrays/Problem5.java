@@ -25,7 +25,7 @@ public class Problem5 {
 		Scanner sc = new Scanner(System.in);
 		int key = sc.nextInt();
 		Problem5.pairOfNum(arr, key);
-
+		
 	}
 
 }
