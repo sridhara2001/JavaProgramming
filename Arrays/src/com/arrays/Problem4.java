@@ -9,7 +9,7 @@ public class Problem4 {
 		for(int i=0; i<arr.length; i++) {
 			n1=arr[i];
 			
-			for(int j=0; j<arr.length; j++) {
+			for(int j=1; j<arr.length; j++) {
 				n2=arr[j];
 				if(n1>n2) {
 					large=n1;

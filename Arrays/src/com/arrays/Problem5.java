@@ -5,13 +5,11 @@ import java.util.Scanner;
 // Pair of a Number in an array
 public class Problem5 {
 	public static void pairOfNum(int[] arr, int key) {
-		int n1;
-		int n2;
 		for(int i=0; i<arr.length; i++) {
-			n1 = arr[i];
+			int n1 = arr[i];
 			
-			for(int j=0; j<arr.length; j++) {
-				n2 = arr[j];
+			for(int j=i+1; j<arr.length; j++) {
+				int n2 = arr[j];
 				if(n1+n2==key) {
 					System.out.println("The index value of pair of numbers of entered number is "+i+" and "+j);
 				}
