@@ -1,6 +1,5 @@
 package com.multiArray;
 
-// Sorting an array in column direction in multi-dimentinal array
 public class Test5 {
 
 	public static void main(String[] args) {
