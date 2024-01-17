@@ -14,7 +14,7 @@ public class Test1 {
 				low=mid+1;
 			}
 		}
-		return high+1; // or you can return low also
+		return low; // or you can return low also
 	}
 
 	public static void main(String[] args) {
