@@ -2,6 +2,7 @@ package com.practice;
 
 import java.util.Arrays;
 
+// Anagram String
 public class Test3 {
 	public static boolean isAnagram(String str, String str1) {
 		boolean flag = false;
@@ -13,8 +14,6 @@ public class Test3 {
 			if(Arrays.equals(arr1, arr2)) {
 				flag=true;
 			}
-		}else {
-			flag=false;
 		}
 		return flag;
 	}
