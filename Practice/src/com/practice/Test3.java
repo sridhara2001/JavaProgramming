@@ -1,19 +1,17 @@
 package com.practice;
 
+import java.util.Arrays;
+
 public class Test3 {
 	public static boolean isAnagram(String str, String str1) {
 		boolean flag = false;
 		if(str.length()==str1.length()) {
-			for(int i=0; i<str.length(); i++) {
-				char ch = str.charAt(i);
-				for(int j=0; j<str1.length(); j++) {
-					char ch1 = str1.charAt(j);
-					if(ch1==ch) {
-						flag=true;
-					}else {
-						break;
-					}
-				}
+			char[] arr1 = str.toCharArray();
+			char[] arr2 = str1.toCharArray();
+			Arrays.sort(arr1);
+			Arrays.sort(arr2);
+			if(Arrays.equals(arr1, arr2)) {
+				flag=true;
 			}
 		}else {
 			flag=false;
@@ -30,7 +28,6 @@ public class Test3 {
 		}else {
 			System.out.println(result);
 		}
-
 	}
 
 }
